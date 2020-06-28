@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_view_profile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_splash_screen"
+    android:orientation="vertical"
+    tools:context=".ViewProfile" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/profile_images" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/img_userdp"
+                    android:layout_width="113dp"
+                    android:layout_height="113dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageButton
+                    android:id="@+id/btn_changedp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/img_userdp"
+                    android:background="@drawable/camera1" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/myprof_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textColor="@color/dialogtext_color"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edit"
+                    android:paddingLeft="5dp"
+                    android:text="Loading..."
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edit"
+                    android:paddingLeft="5dp"
+                    android:text="Loading..."
+                    android:textColor="@color/dialogtext_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit"
+                    android:paddingLeft="5dp"
+                    android:text="Loading..."
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit"
+                    android:paddingLeft="5dp"
+                    android:text="Loading..."
+                    android:textColor="@color/dialogtext_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_contactno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edit"
+                    android:hint="Contact number not found"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_contactno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edit"
+                    android:hint="Please enter contact number"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/dialogtext_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edit"
+                    android:paddingLeft="5dp"
+                    android:text="Loading..."
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edit"
+                    android:paddingLeft="5dp"
+                    android:text="Loading..."
+                    android:textColor="@color/dialogtext_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_red"
+                    android:text="Edit Profile"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btn_saves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_red"
+                    android:text="Save Changes"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_splash_screen"
+    android:orientation="vertical"
+    tools:context=".MyFriends" >
+
+    <LinearLayout
+        android:id="@+id/linear_friendlist_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/linear_data_not_found" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="800dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:visibility="gone" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/txt_friend_not_found" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="No friend to show" -->
+        <!-- android:textColor="@color/edittext_color" -->
+        <!-- android:textSize="16dp" /> -->
+        <!-- </LinearLayout> -->
+
+        <ListView
+            android:id="@+id/lv_friendlist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="No Friends to show"
+            android:textColor="@color/edittext_color"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_find_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0"
+            android:background="@drawable/button_red"
+            android:text="Find friends"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

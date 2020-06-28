@@ -1,0 +1,212 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_splash_screen"
+    tools:context=".GetContact" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_forget"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="Set Contact"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="Please Enter Contact for Quick Emergency"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edt_ph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_dialog"
+                android:digits="0123456789"
+                android:ems="10"
+                android:hint="Enter Contact"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dialogtext_color" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_ph1"
+                android:layout_alignRight="@+id/edt_ph1"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/contact_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edt_ph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_dialog"
+                android:digits="0123456789"
+                android:ems="10"
+                android:hint="Enter Contact"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dialogtext_color" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_ph2"
+                android:layout_alignRight="@+id/edt_ph2"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/contact_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edt_ph3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_dialog"
+                android:digits="0123456789"
+                android:ems="10"
+                android:hint="Enter Contact"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dialogtext_color" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/im3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_ph3"
+                android:layout_alignRight="@+id/edt_ph3"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/contact_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edt_ph4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_dialog"
+                android:digits="0123456789"
+                android:ems="10"
+                android:hint="Enter Contact"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dialogtext_color" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/im4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_ph4"
+                android:layout_alignRight="@+id/edt_ph4"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/contact_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edt_ph5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_dialog"
+                android:digits="0123456789"
+                android:ems="10"
+                android:hint="Enter Contact"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@color/dialogtext_color" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/im5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/edt_ph5"
+                android:layout_alignRight="@+id/edt_ph5"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/contact_icon" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="218dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_red"
+            android:text="Set Contacts"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textVi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Skip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#dd0000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

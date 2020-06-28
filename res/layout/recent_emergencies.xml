@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecentEmergencies" >
+
+    <ListView
+        android:id="@+id/lv_recent_emergencies"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_splash_screen" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_emergencies_not_found"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_splash_screen"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Your account have no emergency records"
+        android:textColor="@color/edittext_color"
+        android:textSize="16dp"
+        android:visibility="gone" />
+</LinearLayout>

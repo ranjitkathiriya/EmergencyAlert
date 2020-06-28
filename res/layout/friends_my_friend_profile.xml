@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_friend_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_splash_screen"
+    android:orientation="vertical"
+    tools:context=".MyFriendsProfile" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_forget"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="Friend Profile"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/profile_images" >
+
+                    <ProgressBar
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/img_userdp"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textColor="@color/dialogtext_color"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit"
+                    android:padding="5dp"
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txt_lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit"
+                    android:padding="5dp"
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edit"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/dialogtext_color"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn_unfriend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button_red"
+                    android:text="Unfriend"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
